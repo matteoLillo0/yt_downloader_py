@@ -36,7 +36,6 @@ if st.button("Download"): # controlliamo se è stato cliccato
                     st.image(info["thumbnail"])
                     st.write(f"Title: {info['title']} ")
                     st.write(f"Creator: {info['uploader']}")
-                    st.write(f"Duration: {info['duration']}")
                     ydl.download([link])
                 st.success(f"Done! '{info['title']} has been downloaded locally!")
         except Exception as e: 
